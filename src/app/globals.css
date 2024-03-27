@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #646ee3 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 30%, #646ee3);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.f {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 4.5rem;
+  background: #1d232a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.footerbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  height: 4rem !important;
+  width: 100vw;
+}
+
+.vidNav {
+  padding: 0.5rem 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.vidNav svg {
+  color: #14191e;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: end;
+  height: 10rem;
+  width: 100vw;
+}
+
+@media (max-width: 425px) {
+  .profile-post-img {
+    width: 30vw;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.vid {
+  height: auto;
+}
+
+.carousel-item > video {
+  border-radius: 0;
+}
+
+a {
+  height: min-content;
+}
+
+.settings {
+  padding: 1rem;
+}
+
+.setting {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.setting-btn {
+  width: 100%;
+}
+
+.meme-toast {
+  position: absolute;
+  width: 80vw;
+  display: block;
+  margin: auto;
+}
+.meme-toast > span {
+  font-size: 14px;
+}
+
+.vidIcon {
+  padding-top: 0.5rem;
+}
+
+.friendAvatar {
+  height: 13rem !important;
+}
+
+@media (max-width: 450px) {
+  .friendCard {
+    width: 45vw;
+  }
+}
+
+.vidFooter {
+  height: auto !important;
+  padding: 0.5rem 0;
+}
